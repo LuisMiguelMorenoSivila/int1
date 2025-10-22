@@ -1,11 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExploraMundo - Agencia de Turismo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-image: url('https://example.com/playa.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 5px #000;
+    }
+    header h1 {
+      font-size: 3em;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .services, .destinations {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 280px;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 6px;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Hola Mundo</h1>
+
+<header>
+  <h1>ExploraMundo</h1>
+</header>
+
+<section>
+  <h2>¿Quiénes somos?</h2>
+  <p>Somos una agencia de turismo apasionada por conectar personas con experiencias inolvidables. Desde playas paradisíacas hasta aventuras en la montaña, diseñamos viajes a medida para cada viajero.</p>
+</section>
+
+<section>
+  <h2>Servicios</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Paquetes personalizados</h3>
+      <p>Diseñamos itinerarios únicos según tus gustos y presupuesto.</p>
+    </div>
+    <div class="card">
+      <h3>Guías locales</h3>
+      <p>Contamos con expertos en cada destino para que vivas una experiencia auténtica.</p>
+    </div>
+    <div class="card">
+      <h3>Reservas y asistencia</h3>
+      <p>Nos encargamos de vuelos, hospedaje y soporte durante tu viaje.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Destinos destacados</h2>
+  <div class="destinations">
+    <div class="card">
+      <img src="https://example.com/machu-picchu.jpg" alt="Machu Picchu">
+      <h3>Machu Picchu</h3>
+      <p>Explorá las maravillas del Perú con guías expertos.</p>
+    </div>
+    <div class="card">
+      <img src="https://example.com/paris.jpg" alt="París">
+      <h3>París</h3>
+      <p>Romance, historia y arte en la ciudad luz.</p>
+    </div>
+    <div class="card">
+      <img src="https://example.com/patagonia.jpg" alt="Patagonia">
+      <h3>Patagonia</h3>
+      <p>Aventura y paisajes únicos en el sur argentino.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Contacto: info@exploramundo.com | Tel: +54 9 388 1234567</p>
+  <p>&copy; 2025 ExploraMundo. Todos los derechos reservados.</p>
+</footer>
+
 </body>
 </html>
